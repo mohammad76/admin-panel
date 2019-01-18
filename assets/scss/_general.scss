@@ -1,0 +1,344 @@
+body {
+  background: #FAFAFA;
+  font-family: $fontfa;
+  font-size: 13px;
+  line-height: 1.6em;
+  color: #444;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: $primary_color;
+  text-decoration: none;
+  transition-duration: 0.3s;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+nav, ol, ul {
+  list-style: none;
+}
+
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+  background: $primary_color !important;
+}
+
+nav {
+  font-family: $fonth;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $fonth;
+}
+
+h1, .h1 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h2, .h2 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+h3, .h3 {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h4, .h4 {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+h5, .h5 {
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
+h6, .h6 {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.carousel-item {
+  img {
+    width: 100%;
+  }
+}
+
+.bg-primary {
+  background-color: $primary_color !important;
+}
+
+.bg-secondary {
+  background-color: $secondary_color !important;
+}
+
+.bg-silver {
+  background-color: #eee !important;
+}
+
+.text-primary {
+  color: $primary_color !important;
+}
+
+.text-secondary {
+  color: $secondary_color !important;
+}
+
+.text-silver {
+  color: #666;
+}
+
+.btn-primary {
+  background: $primary_color !important;
+  border: none;
+}
+
+.bg-dark {
+  background: #333 !important;
+
+}
+
+.navigation {
+  li {
+    display: inline;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      background-color: #6FB7E9;
+      border-radius: 3px;
+      cursor: pointer;
+      padding: 0.75rem;
+
+      &:hover {
+        background-color: #3C8DC5;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.slick-slide {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 3px;
+  margin: 5px;
+
+}
+
+.row.d-flex {
+  height: 100vw;
+  max-height: calc(100vh * 2);
+}
+
+.line-height-30 {
+  line-height: 30px !important;
+}
+
+.images-margin {
+  img {
+    margin: 15px auto;
+  }
+}
+
+.btnmore {
+  color: $primary_color;
+  border: 1px solid $primary_color;
+  padding: 4px 20px;
+  border-radius: 15px;
+
+  &:hover {
+    background: $primary_color;
+    color: #fff;
+  }
+}
+
+input, textarea, select {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 13px !important;
+}
+
+.bgsocial {
+  background: #eee;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  text-align: center;
+  margin: 3px;
+  color: #999;
+  display: inline-block;
+  font-size: 17px;
+  transition-duration: .3s;
+
+  &:hover {
+    background: $primary_color;
+    color: #fff;
+  }
+}
+
+.menu-not-exist {
+  background: $secondary_color;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.navbar {
+  min-height: 50px;
+  padding: 0 15px 0 0;
+  position: relative;
+  z-index: 50;
+  background: $admin_color;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu {
+  display: none;
+  background: $admin_color;
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 60px;
+  z-index: 20;
+  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+
+  ul {
+    li {
+      position: relative;
+
+      a {
+        width: 100%;
+        color: $admin_font_color;
+        display: block;
+        padding: 10px;
+        font-family: $fonth;
+        font-size: 14px;
+        position: relative;
+
+        i {
+          &:before {
+            font-size: 23px;
+            position: relative;
+            margin-left: 5px;
+            top: 3px;
+          }
+        }
+
+        span {
+          position: relative;
+          top: -2px;
+        }
+
+        &:hover {
+          background: $admin_color_darker;
+        }
+      }
+
+      .accordion-sidebar-menu {
+        .card {
+          border: none;
+
+          .card-header {
+            background: #fff;
+            border-radius: unset;
+            padding: 0;
+            border-bottom: none;
+
+            button {
+              width: 100%;
+              color: $admin_font_color;
+              display: block;
+              padding: 10px;
+              font-family: $fonth;
+              font-size: 14px;
+              position: relative;
+              text-align: right;
+
+              i {
+                &:before {
+                  font-size: 23px;
+                  position: relative;
+                  margin-left: 5px;
+                  top: 3px;
+                }
+              }
+
+              span {
+                position: relative;
+                top: -2px;
+              }
+
+              &:hover, &:focus {
+                text-decoration: none;
+                background: $admin_color_darker;
+              }
+            }
+          }
+
+          .card-body {
+            padding: 0 32px;
+            background: $admin_color_darker;
+
+            ul {
+              li {
+                a {
+                  padding: 5px;
+                  &:hover{
+                    color: $primary_color;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    li {
+      &.hs-arrow {
+        & > a, .card-header button {
+          &:after {
+            font: normal normal normal 16px/1 LineAwesome;
+            content: "\f110";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
