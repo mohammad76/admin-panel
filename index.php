@@ -71,6 +71,14 @@
     </ul>
 
 </div>
+<div class="wrapper-admin-panel">
+    <div class="row">
+      <div class="col-12">
+          <h1>پیشخوان</h1>
+          <span class="block-description">در این بخش می توانید نمای کلی سایت را مشاهده کنید</span>
+      </div>
+    </div>
+</div>
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.js"></script>
 <script src="assets/js/slick.js"></script>

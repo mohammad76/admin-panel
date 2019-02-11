@@ -1,0 +1,144 @@
+.navbar {
+  min-height: 50px;
+  padding: 0 15px 0 0;
+  position: relative;
+  z-index: 50;
+  background: $admin_color;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-menu {
+  display: none;
+  background: $admin_color;
+  width: 240px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding-top: 60px;
+  z-index: 20;
+  -webkit-box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 0 20px rgba(0, 0, 0, 0.08);
+
+  ul {
+    li {
+      position: relative;
+
+      a {
+        width: 100%;
+        color: $admin_font_color;
+        display: block;
+        padding: 10px;
+        font-family: $fonth;
+        font-size: 14px;
+        position: relative;
+
+        i {
+          &:before {
+            font-size: 23px;
+            position: relative;
+            margin-left: 5px;
+            top: 3px;
+          }
+        }
+
+        span {
+          position: relative;
+          top: -2px;
+        }
+
+        &:hover {
+          background: $admin_color_darker;
+        }
+      }
+
+      .accordion-sidebar-menu {
+        .card {
+          border: none;
+
+          .card-header {
+            background: #fff;
+            border-radius: unset;
+            padding: 0;
+            border-bottom: none;
+
+            button {
+              width: 100%;
+              color: $admin_font_color;
+              display: block;
+              padding: 10px;
+              font-family: $fonth;
+              font-size: 14px;
+              position: relative;
+              text-align: right;
+
+              i {
+                &:before {
+                  font-size: 23px;
+                  position: relative;
+                  margin-left: 5px;
+                  top: 3px;
+                }
+              }
+
+              span {
+                position: relative;
+                top: -2px;
+              }
+
+              &:hover, &:focus {
+                text-decoration: none;
+                background: $admin_color_darker;
+              }
+            }
+          }
+
+          .card-body {
+            padding: 0 32px;
+            background: $admin_color_darker;
+
+            ul {
+              li {
+                a {
+                  padding: 5px;
+                  &:hover{
+                    color: $primary_color;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    li {
+      &.hs-arrow {
+        & > a, .card-header button {
+          &:after {
+            font: normal normal normal 16px/1 LineAwesome;
+            content: "\f110";
+            position: absolute;
+            top: 15px;
+            left: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+.wrapper-admin-panel{
+  margin: 25px 265px 25px 25px;
+  background: #fff;
+  -webkit-box-shadow: 1px 0 20px rgba(0,0,0,0.08);
+  box-shadow: 1px 0 20px rgba(0,0,0,0.08);
+  min-height: 100px;
+  border-radius: 5px;
+  padding: 30px;
+  h1{
+    margin-bottom: 3px;
+  }
+  .block-description{
+    color: #999;
+  }
+}
